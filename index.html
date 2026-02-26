@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио — Шуманов Никита Алексеевич, фронтенд-разработчик</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Перейти к контенту</a>
+
+    <div class="page">
+        <header class="header">
+            <a href="#" class="header__logo">Н. Шуманов</a>
+            <nav class="header__nav" aria-label="Основная навигация">
+                <ul class="header__menu">
+                    <li><a href="#hero">Главная</a></li>
+                    <li><a href="#portfolio">Работы</a></li>
+                    <li><a href="#about">О себе</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="main" class="main">
+            <section class="hero" id="hero">
+                <h1>Шуманов Никита Алексеевич</h1>
+                <p class="hero__role">Фронтенд-разработчик</p>
+                <p class="hero__desc">Студент, осваиваю фронтенд: HTML, CSS, JavaScript. Делаю первые лендинги и учебные проекты, стремлюсь к аккуратной вёрстке и понятному коду.</p>
+            </section>
+
+            <section class="portfolio" id="portfolio">
+                <h2 class="section-title">Портфолио</h2>
+                <div class="gallery">
+                    <article class="card">
+                        <div class="card__media" aria-hidden="true">Проект 1</div>
+                        <div class="card__body">
+                            <h3 class="card__title">Лендинг EcoDelivery</h3>
+                            <p class="card__text">Адаптивная вёрстка, Flexbox и семантический HTML</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__media" aria-hidden="true">Проект 2</div>
+                        <div class="card__body">
+                            <h3 class="card__title">Портфолио на Grid</h3>
+                            <p class="card__text">Макет на CSS Grid, карточки проектов</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__media" aria-hidden="true">Проект 3</div>
+                        <div class="card__body">
+                            <h3 class="card__title">Учебный таск-лист</h3>
+                            <p class="card__text">Простой список задач на ванильном JavaScript</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__media" aria-hidden="true">Проект 4</div>
+                        <div class="card__body">
+                            <h3 class="card__title">Адаптивная галерея</h3>
+                            <p class="card__text">Страница с медиазапросами и mobile-first</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__media" aria-hidden="true">Проект 5</div>
+                        <div class="card__body">
+                            <h3 class="card__title">Форма с валидацией</h3>
+                            <p class="card__text">Форма обратной связи и доступность (a11y)</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__media" aria-hidden="true">Проект 6</div>
+                        <div class="card__body">
+                            <h3 class="card__title">Типографика и стили</h3>
+                            <p class="card__text">Базовый CSS, контраст, читаемость</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="about" id="about">
+                <div class="about__content">
+                    <h2>О себе</h2>
+                    <p>Студент, делаю первые шаги во фронтенд-разработке. Изучаю вёрстку (HTML, CSS), базовый JavaScript и адаптивные макеты. В курсе прошёл путь от простой разметки до Grid, Flexbox и основ доступности.</p>
+                    <p>Интересуюсь современными фреймворками и хочу развиваться в направлении веб-разработки. Готов к стажировкам и учебным проектам.</p>
+                </div>
+                <div class="about__photo">
+                    <img src="img/portrait.jpg" alt="Портрет Никиты Шуманова, фронтенд-разработчика">
+                </div>
+            </section>
+
+            <section class="contact" id="contact">
+                <h2>Обратная связь</h2>
+                <form class="form" id="contact-form" novalidate>
+                    <div class="form__row">
+                        <label class="form__label" for="form-name">Имя <span class="form__required" aria-hidden="true">*</span></label>
+                        <input class="form__input" type="text" id="form-name" name="name" required autocomplete="name">
+                    </div>
+                    <div class="form__row">
+                        <label class="form__label" for="form-email">Email <span class="form__required" aria-hidden="true">*</span></label>
+                        <input class="form__input" type="email" id="form-email" name="email" required autocomplete="email">
+                    </div>
+                    <div class="form__row form__row--checkbox">
+                        <input class="form__checkbox" type="checkbox" id="form-newsletter" name="newsletter" value="1">
+                        <label class="form__label form__label--inline" for="form-newsletter">Подписаться на рассылку</label>
+                    </div>
+                    <div id="form-error" class="form__error" aria-live="polite" aria-atomic="true" role="status"></div>
+                    <button type="submit" class="form__submit">Отправить</button>
+                </form>
+            </section>
+
+            <footer class="footer">
+                <p class="footer__email">Связаться: <a href="mailto:nikita@example.com">ShNikita@example.com</a></p>
+                <p class="footer__social">GitHub · Telegram · VK</p>
+                <p class="footer__copy">&copy; 2025 Шуманов Никита Алексеевич</p>
+            </footer>
+        </main>
+    </div>
+
+    <script>
+        (function () {
+            var form = document.getElementById('contact-form');
+            var errorEl = document.getElementById('form-error');
+            if (!form || !errorEl) return;
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                var name = document.getElementById('form-name');
+                var email = document.getElementById('form-email');
+                var msg = '';
+                if (!name.value.trim()) msg = 'Поле «Имя» обязательно для заполнения.';
+                else if (!email.value.trim()) msg = 'Поле «Email» обязательно для заполнения.';
+                errorEl.textContent = msg;
+                if (msg) name.focus();
+            });
+        })();
+    </script>
+</body>
+</html>
